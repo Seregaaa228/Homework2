@@ -60,17 +60,16 @@ public class Dog {
 
     }
 
-      public boolean equalsAge(Dog dog){
-        if(age != 0){
-            return Objects.equals(age, dog.age);
+      public boolean dogComparison(Dog dog) {
+        if (this.getAge() == dog.getAge() && this.getWeight() == dog.getWeight()) {
+            System.out.println("Возраст одинаковый и Вес одинаковый");
+            return true;
+        } else {
+            System.out.println("Одинаково что-то одно или ничего");
+            return false;
         }
-        return dog.age == 0;
-      }
-    public boolean equalsWeight(Dog dog){
-        if(weight != 0){
-            return Objects.equals(age, dog.weight);
-        }
-        return dog.weight == 0;
+
+
     }
 
 }
