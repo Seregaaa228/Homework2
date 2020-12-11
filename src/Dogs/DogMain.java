@@ -9,7 +9,7 @@ public class DogMain {
         Dog tom = new Dog("Том", 5, 7, "Лабрадор");
         tom.document();
         System.out.println();
-        mark.dogComparison(tom);
+        mark.equals(tom);
 
 
     }
