@@ -60,7 +60,7 @@ public class Dog {
 
     }
 
-      public boolean dogComparison(Dog dog) {
+      public boolean equals(Dog dog) {
         if (this.getAge() == dog.getAge() && this.getWeight() == dog.getWeight()) {
             System.out.println("Возраст одинаковый и Вес одинаковый");
             return true;
